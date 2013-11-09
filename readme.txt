@@ -1,10 +1,10 @@
 === Easy Media Download ===
 Contributors: naa986
 Donate link: http://noorsplugin.com/
-Tags: download, digital, downloads, ecommerce, media
+Tags: download, downloads, media, digital downloads, e-commerce, e-downloads, e-store, ecommerce, eshop, wp ecommerce
 Requires at least: 3.0
 Tested up to: 3.7
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,6 +44,12 @@ By default the height for the download button is "41". But you can choose to mod
 
 `[easy_media_download url="http://example.com/wp-content/uploads/myfile.zip" text="Free Download" width="100" height="50"]`
 
+*Download in a new window*
+
+By default the download starts in the same window. But you can choose to modify it using the "target" parameter.
+
+`[easy_media_download url="http://example.com/wp-content/uploads/myfile.zip" target="_blank"]`  (opens the download in a new window)
+
 For detailed documentation please visit the [Easy Media Download](http://noorsplugin.com/easy-media-download-plugin-for-wordpress/) plugin page
 
 == Installation ==
@@ -71,6 +77,9 @@ For screenshots please visit the [Easy Media Download](http://noorsplugin.com/ea
 none
 
 == Changelog ==
+
+= 1.0.2 =
+* Added a new shortcode parameter to open the download in a new window
 
 = 1.0.1 =
 * First commit

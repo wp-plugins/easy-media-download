@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Easy Media Download
-Version: 1.0.1
+Version: 1.0.2
 Plugin URI: http://noorsplugin.com/easy-media-download-plugin-for-wordpress/
 Author: naa986
 Author URI: http://noorsplugin.com/
@@ -13,7 +13,7 @@ if(!class_exists('EASY_MEDIA_DOWNLOAD'))
 {
     class EASY_MEDIA_DOWNLOAD
     {
-        var $plugin_version = '1.0.1';
+        var $plugin_version = '1.0.2';
         function __construct()
         {
             define('EASY_MEDIA_DOWNLOAD_VERSION', $this->plugin_version);
@@ -60,6 +60,7 @@ function easy_media_download_handler($atts)
         'text' => 'Download Now',
         'width' => '153',
         'height' => '41',
+        'target' => '_self',
     ), $atts));
     $styles = <<<EOT
     <style type="text/css">
@@ -110,7 +111,7 @@ function easy_media_download_handler($atts)
     </style>
 EOT;
     $output = <<<EOT
-    <a href="$url" class="easy_media_dl_button">$text</a>
+    <a href="$url" target="$target" class="easy_media_dl_button">$text</a>
     $styles
 EOT;
     return $output;
