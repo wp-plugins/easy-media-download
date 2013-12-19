@@ -3,8 +3,8 @@ Contributors: naa986
 Donate link: http://noorsplugin.com/
 Tags: download, downloads, media, digital downloads, e-commerce, e-downloads, e-store, ecommerce, eshop, wp ecommerce
 Requires at least: 3.0
-Tested up to: 3.7
-Stable tag: 1.0.2
+Tested up to: 3.8
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,6 +13,22 @@ Easy Media Download allows you to embed download buttons on your WordPress site.
 == Description ==
 
 Easy Media Download allows your users to download digital media files from your website. You can create beautiful download button which instantly starts the download once clicked.
+
+= Features =
+
+* Create a quick download
+* Insert download button on your landing page
+* Allow users to directly download in all file formats
+* Allow large file download (No limit on the file size)
+* Free downloads for music or audio files e.g. mp3, aac, m4a, wav
+* Free downloads for video files e.g. mp4, mov, qt (QuickTime), mpg, mpeg, flv, m4v, swf, flash, avi, wma, ogg, webm
+* Free downloads for document file e.g. doc, docx (OpenOffice, Microsoft Word), odt (OpenDocument), htm, html, ps, tex, xml, txt, csv
+* Free downloads for Office file e.g. xlsx (Microsoft Excel), pptx (Microsoft PowerPoint) 
+* Free downloads for script e.g. js, css, php
+* Free downloads for archive or compressed file e.g. tar, rar, zip, 7z, gz, z
+* Free downloads for image file e.g. png, gif, jpg, jpeg, bmp
+* Free downloads for e-book e.g. pdf, epub
+
 
 = Easy Media Download Plugin Usage =
 
@@ -77,6 +93,9 @@ For screenshots please visit the [Easy Media Download](http://noorsplugin.com/ea
 none
 
 == Changelog ==
+
+= 1.0.3 =
+* Easy media download is now compatible with WordPress 3.8
 
 = 1.0.2 =
 * Added a new shortcode parameter to open the download in a new window

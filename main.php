@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Easy Media Download
-Version: 1.0.2
+Version: 1.0.3
 Plugin URI: http://noorsplugin.com/easy-media-download-plugin-for-wordpress/
 Author: naa986
 Author URI: http://noorsplugin.com/
@@ -13,7 +13,7 @@ if(!class_exists('EASY_MEDIA_DOWNLOAD'))
 {
     class EASY_MEDIA_DOWNLOAD
     {
-        var $plugin_version = '1.0.2';
+        var $plugin_version = '1.0.3';
         function __construct()
         {
             define('EASY_MEDIA_DOWNLOAD_VERSION', $this->plugin_version);
