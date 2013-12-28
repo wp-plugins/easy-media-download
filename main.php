@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Easy Media Download
-Version: 1.0.3
+Version: 1.0.4
 Plugin URI: http://noorsplugin.com/easy-media-download-plugin-for-wordpress/
 Author: naa986
 Author URI: http://noorsplugin.com/
@@ -13,10 +13,15 @@ if(!class_exists('EASY_MEDIA_DOWNLOAD'))
 {
     class EASY_MEDIA_DOWNLOAD
     {
-        var $plugin_version = '1.0.3';
+        var $plugin_version = '1.0.4';
+        var $plugin_url;
+        var $plugin_path;
         function __construct()
         {
             define('EASY_MEDIA_DOWNLOAD_VERSION', $this->plugin_version);
+            define('EASY_MEDIA_DOWNLOAD_SITE_URL',site_url());
+            define('EASY_MEDIA_DOWNLOAD_URL', $this->plugin_url());
+            define('EASY_MEDIA_DOWNLOAD_PATH', $this->plugin_path());
             $this->plugin_includes();
         }
         function plugin_includes()
@@ -27,11 +32,16 @@ if(!class_exists('EASY_MEDIA_DOWNLOAD'))
             }
             //add_action('admin_menu', array( &$this, 'add_options_menu' ));
             add_shortcode('easy_media_download','easy_media_download_handler');
+            add_shortcode('emd_donation','easy_media_download_donation_handler');
         }
         function plugin_url()
         {
             if($this->plugin_url) return $this->plugin_url;
             return $this->plugin_url = plugins_url( basename( plugin_dir_path(__FILE__) ), basename( __FILE__ ) );
+        }
+        function plugin_path(){ 	
+            if ( $this->plugin_path ) return $this->plugin_path;		
+            return $this->plugin_path = untrailingslashit( plugin_dir_path( __FILE__ ) );
         }
         function add_plugin_action_links($links, $file)
         {
@@ -113,6 +123,34 @@ EOT;
     $output = <<<EOT
     <a href="$url" target="$target" class="easy_media_dl_button">$text</a>
     $styles
+EOT;
+    return $output;
+}
+
+function easy_media_download_donation_handler($atts)
+{
+    extract(shortcode_atts(array(
+        'email' => '',
+        'currency' => 'USD',
+        'image' => '',
+        'locale' => 'US',
+    ), $atts));
+    if(empty($email)){
+        return "Please specify the PayPal email address which will receive the payments";
+    }
+    if(empty($image)){
+        $image = EASY_MEDIA_DOWNLOAD_URL."/images/donate.gif";
+    }
+    $output = <<<EOT
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <input type="hidden" name="cmd" value="_donations">
+    <input type="hidden" name="business" value="$email">
+    <input type="hidden" name="lc" value="$locale">
+    <input type="hidden" name="no_note" value="0">
+    <input type="hidden" name="currency_code" value="$currency">
+    <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
+    <input type="image" src="$image" name="submit">
+    </form>
 EOT;
     return $output;
 }

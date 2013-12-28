@@ -1,10 +1,10 @@
 === Easy Media Download ===
 Contributors: naa986
 Donate link: http://noorsplugin.com/
-Tags: download, downloads, media, digital downloads, e-commerce, e-downloads, e-store, ecommerce, eshop, wp ecommerce
+Tags: download, downloads, media, digital downloads, e-commerce, e-downloads, e-store, ecommerce, eshop, wp ecommerce, donation
 Requires at least: 3.0
 Tested up to: 3.8
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,7 @@ Easy Media Download allows you to embed download buttons on your WordPress site.
 
 == Description ==
 
-Easy Media Download allows your users to download digital media files from your website. You can create beautiful download button which instantly starts the download once clicked.
+Easy Media Download allows your users to download digital media files from your website. It's lightweight and makes downloading easier. You can create beautiful download button which instantly starts the download once clicked.
 
 = Features =
 
@@ -20,6 +20,7 @@ Easy Media Download allows your users to download digital media files from your 
 * Insert download button on your landing page
 * Allow users to directly download in all file formats
 * Allow large file download (No limit on the file size)
+* Accept donations for your free digital downloads using PayPal
 * Free downloads for music or audio files e.g. mp3, aac, m4a, wav
 * Free downloads for video files e.g. mp4, mov, qt (QuickTime), mpg, mpeg, flv, m4v, swf, flash, avi, wma, ogg, webm
 * Free downloads for document file e.g. doc, docx (OpenOffice, Microsoft Word), odt (OpenDocument), htm, html, ps, tex, xml, txt, csv
@@ -66,6 +67,30 @@ By default the download starts in the same window. But you can choose to modify 
 
 `[easy_media_download url="http://example.com/wp-content/uploads/myfile.zip" target="_blank"]`  (opens the download in a new window)
 
+*Embedding a Donation Button for Free Download*
+
+You can accept donations from users visiting your site for your free downloads. Simply use the following shortcode with your PayPal email address in it.
+
+`[emd_donation email="abc123@hotmail.com"]`
+
+*Donation Currency*
+
+The default currency is "USD". But you can also accept payments in your preferred currency using the "currency" parameter.
+
+`[emd_donation email="abc123@hotmail.com" currency="CAD"]` (This will set the currency to Canadian Dollar)
+
+*Payment Page Language*
+
+The default locale for the payment page is "US". But you can set it to your preferred language using the "locale" parameter.
+
+`[emd_donation email="abc123@hotmail.com" locale="BE"]` (This will set the locale to Belgium)
+
+*Donation Button Image*
+
+You can customize the donation button by specifying your preferred image in the shortcode.
+
+`[emd_donation email="abc123@hotmail.com" image="http://example.com/wp-content/uploads/images/donate.jpg"]`
+
 For detailed documentation please visit the [Easy Media Download](http://noorsplugin.com/easy-media-download-plugin-for-wordpress/) plugin page
 
 == Installation ==
@@ -85,6 +110,10 @@ Yes.
 
 Yes.
 
+= Can I accept donations for my digital downloads? =
+
+Yes.
+
 == Screenshots ==
 
 For screenshots please visit the [Easy Media Download](http://noorsplugin.com/easy-media-download-plugin-for-wordpress/) plugin page
@@ -93,6 +122,9 @@ For screenshots please visit the [Easy Media Download](http://noorsplugin.com/ea
 none
 
 == Changelog ==
+
+= 1.0.4 =
+* Added donation options for free downloads
 
 = 1.0.3 =
 * Easy media download is now compatible with WordPress 3.8
