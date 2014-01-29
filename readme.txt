@@ -4,7 +4,7 @@ Donate link: http://noorsplugin.com/
 Tags: download, downloads, media, digital downloads, e-commerce, e-downloads, e-store, ecommerce, eshop, wp ecommerce, donation
 Requires at least: 3.0
 Tested up to: 3.8
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,12 +12,12 @@ Easy Media Download allows you to embed download buttons on your WordPress site.
 
 == Description ==
 
-Easy Media Download allows your users to download digital media files from your website. It's lightweight and makes downloading easier. You can create beautiful download button which instantly starts the download once clicked.
+[Easy Media Download](http://noorsplugin.com/easy-media-download-plugin-for-wordpress/) is a free download manager for WordPress. It gives your users the ability to download digital media files from your website. The plugin is lightweight and makes downloading easier. You can create beautiful download button which instantly starts the download once clicked.
 
 = Features =
 
-* Create a quick download
-* Insert download button on your landing page
+* Create quick downloads
+* Insert download buttons into your landing page
 * Allow users to directly download in all file formats
 * Allow large file download (No limit on the file size)
 * Accept donations for your free digital downloads using PayPal
@@ -29,11 +29,11 @@ Easy Media Download allows your users to download digital media files from your 
 * Free downloads for archive or compressed file e.g. tar, rar, zip, 7z, gz, z
 * Free downloads for image file e.g. png, gif, jpg, jpeg, bmp
 * Free downloads for e-book e.g. pdf, epub
+* Track/Monitor your downloads
 
+For more information please check the [Easy Media Download](http://noorsplugin.com/easy-media-download-plugin-for-wordpress/) documentation page
 
-= Easy Media Download Plugin Usage =
-
-*Embedding Shortcodes for the Downloads*
+= Embedding Shortcodes for the Downloads =
 
 Create a new post/page and use the following shortcode to create a download button for your digital media file:
 
@@ -43,55 +43,101 @@ here, url is a shortcode parameter that you need to replace with the actual URL 
 
 You can also specify additional optional parameters in the shortcode to customize the free download button.
 
-*Button Text*
+**Button Text**
 
 By default the text for the download button is "Download Now". But you can choose to modify the text using the "text" parameter.
 
 `[easy_media_download url="http://example.com/wp-content/uploads/myfile.zip" text="Free Download"]`
 
-*Button Width*
+**Button Width**
 
 By default the width for the download button is "153". But you can choose to modify it using the "width" parameter.
 
 `[easy_media_download url="http://example.com/wp-content/uploads/myfile.zip" text="Free Download" width="100"]`
 
-*Button Height*
+**Button Height**
 
 By default the height for the download button is "41". But you can choose to modify it using the "height" parameter.
 
 `[easy_media_download url="http://example.com/wp-content/uploads/myfile.zip" text="Free Download" width="100" height="50"]`
 
-*Download in a new window*
+**Download in a new window**
 
 By default the download starts in the same window. But you can choose to modify it using the "target" parameter.
 
 `[easy_media_download url="http://example.com/wp-content/uploads/myfile.zip" target="_blank"]`  (opens the download in a new window)
 
-*Embedding a Donation Button for Free Download*
+= Download Button Templates =
+
+Easy Media Download comes with 21 different download button templates. All you need to do is specify the style and the button will look just like it. For example:
+
+`[easy_media_download url="http://example.com/wp-content/uploads/myfile.zip" color="red_darker"]`
+
+* grey
+* grey_light
+* red
+* green_dark
+* green_light
+* green
+* blue
+* blue_two
+* blue_three
+* blue_four
+* orange
+* orange_two
+* orange_light
+* orange_dark
+* purple
+* purple_dark
+* purple_light
+* yellow_red
+* hot_pink
+* pink
+
+If you want to fully customize the download button you can use your own button image instead.
+
+= Embedding a Donation Button for Free Download =
 
 You can accept donations from users visiting your site for your free downloads. Simply use the following shortcode with your PayPal email address in it.
 
 `[emd_donation email="abc123@hotmail.com"]`
 
-*Donation Currency*
+**Donation Currency**
 
 The default currency is "USD". But you can also accept payments in your preferred currency using the "currency" parameter.
 
 `[emd_donation email="abc123@hotmail.com" currency="CAD"]` (This will set the currency to Canadian Dollar)
 
-*Payment Page Language*
+**Payment Page Language**
 
 The default locale for the payment page is "US". But you can set it to your preferred language using the "locale" parameter.
 
 `[emd_donation email="abc123@hotmail.com" locale="BE"]` (This will set the locale to Belgium)
 
-*Donation Button Image*
+**Donation Button Image**
 
 You can customize the donation button by specifying your preferred image in the shortcode.
 
 `[emd_donation email="abc123@hotmail.com" image="http://example.com/wp-content/uploads/images/donate.jpg"]`
 
-For detailed documentation please visit the [Easy Media Download](http://noorsplugin.com/easy-media-download-plugin-for-wordpress/) plugin page
+= Digital Download Tracking =
+
+Easy Media Download is integrated with [Google Analytics](http://wordpress.org/plugins/google-analytics-for-wordpress/) plugin. It allows you to see how many times a particular file has been downloaded in real time from your Google Analytics account. 
+
+= Languages =
+
+Easy Media Download can be translated into your languages. Currently it supports the following languages:
+
+* French
+* Spanish
+* German
+* Italian
+* Dutch
+* Turkish
+
+**Like Easy Media Download Already?**
+
+Feel free to drop your review [here](http://wordpress.org/support/view/plugin-reviews/easy-media-download/)
 
 == Installation ==
 
@@ -122,6 +168,10 @@ For screenshots please visit the [Easy Media Download](http://noorsplugin.com/ea
 none
 
 == Changelog ==
+
+= 1.0.5 =
+* Added translation options in the plugin
+* Added more download button templates
 
 = 1.0.4 =
 * Added donation options for free downloads
