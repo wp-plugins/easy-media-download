@@ -4,7 +4,7 @@ Donate link: http://noorsplugin.com/
 Tags: download, downloads, media, digital downloads, e-commerce, e-downloads, e-store, ecommerce, eshop, wp ecommerce, donation
 Requires at least: 3.0
 Tested up to: 3.8
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +30,7 @@ Easy Media Download allows you to embed download buttons on your WordPress site.
 * Free downloads for image file e.g. png, gif, jpg, jpeg, bmp
 * Free downloads for e-book e.g. pdf, epub
 * Track/Monitor your downloads
+* Ability to force a digital file download
 
 For more information please check the [Easy Media Download](http://noorsplugin.com/easy-media-download-plugin-for-wordpress/) documentation page
 
@@ -66,6 +67,12 @@ By default the height for the download button is "41". But you can choose to mod
 By default the download starts in the same window. But you can choose to modify it using the "target" parameter.
 
 `[easy_media_download url="http://example.com/wp-content/uploads/myfile.zip" target="_blank"]`  (opens the download in a new window)
+
+= Force File Download =
+
+Usually when a digital file is recognised by the browser it does not prompt for download. The file just opens in the browser instead. You can choose to modify this behaviour using the `force_dl` parameter in the shortcode.
+
+`[easy_media_download url="http://example.com/wp-content/uploads/myfile.mp3" force_dl="1"]` 
 
 = Download Button Templates =
 
@@ -168,6 +175,9 @@ For screenshots please visit the [Easy Media Download](http://noorsplugin.com/ea
 none
 
 == Changelog ==
+
+= 1.0.6 =
+* Added a feature where the digital media file will download instead of opening in the browser window
 
 = 1.0.5 =
 * Added translation options in the plugin
