@@ -146,6 +146,11 @@ Easy Media Download can be translated into your languages. Currently it supports
 
 Feel free to drop your review [here](http://wordpress.org/support/view/plugin-reviews/easy-media-download/)
 
+= Recommended Reading =
+
+* Easy Media Download [Documentation](http://noorsplugin.com/easy-media-download-plugin-for-wordpress/)
+* My Other [Free WordPress Plugins](http://noorsplugin.com/wordpress-plugins/)
+
 == Installation ==
 
 1. Go to the Add New plugins screen in your WordPress Dashboard
