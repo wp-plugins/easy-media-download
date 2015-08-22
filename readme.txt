@@ -3,8 +3,8 @@ Contributors: naa986
 Donate link: http://noorsplugin.com/
 Tags: download, downloads, media, digital downloads, e-commerce, e-downloads, e-store, ecommerce, eshop, wp ecommerce, donation
 Requires at least: 3.0
-Tested up to: 4.2
-Stable tag: 1.0.7
+Tested up to: 4.3
+Stable tag: 1.0.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -180,6 +180,9 @@ For screenshots please visit the [Easy Media Download](http://noorsplugin.com/ea
 none
 
 == Changelog ==
+
+= 1.0.8 =
+* Easy media download is now compatible with WordPress 4.3
 
 = 1.0.7 =
 * Easy media download is now compatible with WordPress 3.9
