@@ -1,11 +1,13 @@
 <?php
 /*
 Plugin Name: Easy Media Download
-Version: 1.0.8
+Version: 1.0.9
 Plugin URI: http://noorsplugin.com/easy-media-download-plugin-for-wordpress/
 Author: naa986
 Author URI: http://noorsplugin.com/
 Description: Easily embed download buttons for your digital media files
+Text Domain: easy-media-download
+Domain Path: /languages
 */
 
 if(!defined('ABSPATH')) exit;
@@ -13,7 +15,7 @@ if(!class_exists('EASY_MEDIA_DOWNLOAD'))
 {
     class EASY_MEDIA_DOWNLOAD
     {
-        var $plugin_version = '1.0.8';
+        var $plugin_version = '1.0.9';
         var $plugin_url;
         var $plugin_path;
         function __construct()
@@ -55,14 +57,14 @@ if(!class_exists('EASY_MEDIA_DOWNLOAD'))
         
         function plugins_loaded_handler()
         {
-            load_plugin_textdomain( 'emd', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' ); 
+            load_plugin_textdomain( 'easy-media-download', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' ); 
         }
 
         function add_options_menu()
         {
             if(is_admin())
             {
-                add_options_page(__('Easy Media Download Settings', 'emd'), __('Easy Media Download', 'emd'), 'manage_options', 'easy-media-download-settings', array(&$this, 'display_options_page'));
+                add_options_page(__('Easy Media Download Settings', 'easy-media-download'), __('Easy Media Download', 'easy-media-download'), 'manage_options', 'easy-media-download-settings', array(&$this, 'display_options_page'));
             }
         }
     }
@@ -73,7 +75,7 @@ function easy_media_download_handler($atts)
 {
     extract(shortcode_atts(array(
         'url' => '',
-        'text' => __('Download Now', 'emd'),
+        'text' => __('Download Now', 'easy-media-download'),
         'width' => '153',
         'height' => '41',
         'color' => 'red_darker',
@@ -239,7 +241,7 @@ function easy_media_download_donation_handler($atts)
         'locale' => 'US',
     ), $atts));
     if(empty($email)){
-        return __('Please specify the PayPal email address which will receive the payments', 'emd');
+        return __('Please specify the PayPal email address which will receive the payments', 'easy-media-download');
     }
     if(empty($image)){
         $image = EASY_MEDIA_DOWNLOAD_URL."/images/donate.gif";

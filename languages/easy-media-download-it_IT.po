@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Easy Media Download\n"
-"POT-Creation-Date: 2014-01-29 16:41+1000\n"
-"PO-Revision-Date: 2014-01-29 17:07+1000\n"
+"POT-Creation-Date: 2015-11-11 12:31+1000\n"
+"PO-Revision-Date: 2015-11-11 13:22+1000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -11,23 +11,22 @@ msgstr ""
 "X-Generator: Poedit 1.5.5\n"
 "X-Poedit-KeywordsList: _e;__\n"
 "X-Poedit-Basepath: .\n"
-"Language: Spanish\n"
+"Language: Italian\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: main.php:65
+#: main.php:67
 msgid "Easy Media Download Settings"
-msgstr "Easy Media Download Configuración"
+msgstr "Easy Media Download impostazioni"
 
-#: main.php:65
+#: main.php:67
 msgid "Easy Media Download"
 msgstr "Easy Media Download"
 
-#: main.php:76
+#: main.php:78
 msgid "Download Now"
-msgstr "Descargar ahora"
+msgstr "Scarica ora"
 
-#: main.php:238
+#: main.php:244
 msgid "Please specify the PayPal email address which will receive the payments"
 msgstr ""
-"Por favor, especifique la dirección de correo electrónico de PayPal, que "
-"recibirá los pagos"
+"Si prega di specificare l'indirizzo email di PayPal che riceverà i pagamenti"
